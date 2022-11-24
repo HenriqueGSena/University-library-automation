@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20221123234815",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "book",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "autor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isbn",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "editora",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "edicao",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Book",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "publications",
+      "otherEntityRelationshipName": "book",
+      "relationshipName": "publications",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

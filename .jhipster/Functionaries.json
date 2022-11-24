@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20221123234816",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "functionaries",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "setor",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Functionaries",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "registration",
+      "otherEntityRelationshipName": "functionaries",
+      "relationshipName": "registration",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

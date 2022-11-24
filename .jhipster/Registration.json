@@ -1,0 +1,76 @@
+{
+  "applications": "*",
+  "changelogDate": "20221123234820",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "registration",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "matricula",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dataNascimento",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endereco",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Registration",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "functionaries",
+      "otherEntityRelationshipName": "registration",
+      "relationshipName": "functionaries",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "librarian",
+      "otherEntityRelationshipName": "registration",
+      "relationshipName": "librarian",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "student",
+      "otherEntityRelationshipName": "registration",
+      "relationshipName": "student",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "teacher",
+      "otherEntityRelationshipName": "registration",
+      "relationshipName": "teacher",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "emprestimo",
+      "otherEntityRelationshipName": "registration",
+      "ownerSide": false,
+      "relationshipName": "emprestimo",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

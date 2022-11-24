@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20221123234822",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "teacher",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "materia",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Teacher",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "registration",
+      "otherEntityRelationshipName": "teacher",
+      "relationshipName": "registration",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

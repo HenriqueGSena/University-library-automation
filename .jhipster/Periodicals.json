@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20221123234818",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "periodicals",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "volume",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "numero",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "issn",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Periodicals",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "publications",
+      "otherEntityRelationshipName": "periodicals",
+      "relationshipName": "publications",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

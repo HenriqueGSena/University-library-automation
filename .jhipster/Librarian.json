@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20221123234817",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "librarian",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Librarian",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "registration",
+      "otherEntityRelationshipName": "librarian",
+      "relationshipName": "registration",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

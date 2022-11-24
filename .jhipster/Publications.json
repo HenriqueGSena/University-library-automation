@@ -1,0 +1,57 @@
+{
+  "applications": "*",
+  "changelogDate": "20221123234819",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "publications",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "titulo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "preco",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "dataPublicacao",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "DISPONIVEL,EMPRESTADO,RESERVADO,BLOQUEADO"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Publications",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "book",
+      "otherEntityRelationshipName": "publications",
+      "relationshipName": "book",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "periodicals",
+      "otherEntityRelationshipName": "publications",
+      "relationshipName": "periodicals",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "emprestimo",
+      "otherEntityRelationshipName": "publications",
+      "ownerSide": false,
+      "relationshipName": "emprestimo",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}
